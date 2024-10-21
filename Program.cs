@@ -8,7 +8,7 @@ string? cadena = builder.Configuration.GetConnectionString("DefaultConnection") 
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<Conexiones>(opt =>
-    opt.UseSqlServer(cadena));
+    opt.UseMySQL(cadena));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
